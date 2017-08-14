@@ -1,0 +1,63 @@
+/* global styles */
+body {
+	background-image: url(/images/cover.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.avatar img {
+	width: 150px;
+	height: 150px;
+}
+
+#main {
+	opacity: 0.98;
+}
+
+/* for narrow screens, likely a phone */
+@media screen and (max-width: 720px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	h5 {
+		font-size: 1.8em;
+	}
+	ul {
+		font-size: 1.35em;
+	}
+	.biography {
+		font-size: 1.45em;
+	}
+}
+
+/* for wide screens, likely a desktop */
+@media screen and (min-width: 1280px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.2em;
+	}
+	h5 {
+		font-size: 1.4em;
+	}
+	ul {
+		font-size: 1.6em;
+	}
+	.biography {
+		font-size: 1.8em;
+	}
+	.avatar img {
+		height: 250px;
+		width: 250px;
+	}
+	#main {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#main {
+		max-width: 100%;
+	}
+}
